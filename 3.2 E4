@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "stack.h"
+
+int main()
+{
+    Stack s;
+    stack_elements myelement ;
+    int number,i, j;
+    printf("Enter the number :");
+    scanf("%d",&number);
+    createStack(&s);
+    //nested loop
+    while (number !=1 )
+    {
+        for(i=2; i<=9; i++)
+        {
+
+            if(number % i ==0)
+            {
+                push(&s,i);
+                number = number/i;
+                break;
+            }
+
+        }
+    }
+traverseStack(&s,&display);
+
+    return 0;
+}
