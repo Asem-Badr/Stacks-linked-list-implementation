@@ -20,7 +20,7 @@ int main()
     printf("first = %d\n", first);
     printf("third = %d\n", third);
     printf("buttom = %d\n", buttomElement (&s));
-    printf("the stack size is : %d",stackSize(&s));
+    printf("the stack size is : %d\n",stackSize(&s));
     deleteX(&s ,10);
     traverseStack(&s,&display);
 
